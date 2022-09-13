@@ -7,6 +7,6 @@ const port = 4000;
 import todosRoutes from './routes/todos';
 
 app.use(bodyParser.json());
-app.use()
+app.use('/',todosRoutes)
 
 app.listen(port);

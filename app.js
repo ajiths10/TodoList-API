@@ -7,6 +7,7 @@ const express_1 = __importDefault(require("express"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const app = (0, express_1.default)();
 const port = 4000;
+const todos_1 = __importDefault(require("./routes/todos"));
 app.use(body_parser_1.default.json());
-app.use();
+app.use('/', todos_1.default);
 app.listen(port);
