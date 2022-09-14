@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const router = (0, express_1.Router)();
-let todos = [];
 const todoController = require("../contorller/index");
 router.get("/", todoController.getTodos);
 router.post("/todo", todoController.postTodos);

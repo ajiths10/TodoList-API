@@ -14,9 +14,7 @@ exports.postTodos = (req: any, res: any, next: any) => {
     id: new Date().toISOString(),
     text: body.text,
   };
-
   todos.push(newTodo);
-
   res.status(200).json({ message: " Aadded", todos: todos });
 };
 
